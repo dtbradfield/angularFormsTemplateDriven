@@ -15,7 +15,12 @@
             name="username"
             required>
           </div>
-          <button class="btn btn-default" type="button">Suggest a Username</button>
+          <button 
+            class="btn btn-default" 
+            type="button"
+            (click)="suggestUserName()">
+              Suggest a Username
+          </button>
           <div class="form-group">
             <label for="email">Mail</label>
             <input 
@@ -57,7 +62,8 @@
             type="radio" 
             name="gender" 
             ngModel 
-            [value]="gender">
+            [value]="gender"
+            required>
             {{ gender }}
           </label>
         </div>
